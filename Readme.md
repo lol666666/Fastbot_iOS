@@ -4,6 +4,11 @@ Fastbot is a model-based testing tool for modeling GUI transitions to discover a
  
 ***More detail see at [Fastbot architecture](https://mp.weixin.qq.com/s/QhzqBFZygkIS6C69__smyQ)
 
+**update 2022.1**
+* update Fastbot Revised License
+* release AnyTrace, the Fastbot test management assistant: supports one-click Fastbot test start, crash analysis, etc. ([AnyTrace User Manual](https://www.volcengine.com/docs/6431/82895))
+
+
 ## Prepare test environment
   * `cd Fastbot-iOS && pod install --repo-update`
   * Open `Fastbot-iOS.xcworkspace`, Set `FastbotRunner` [Signing & Capabilities](./Doc/Fastbot-Xcode-Sign.png) and [Bundle ID](./Doc/Fastbot-Xcode-BundleId.png)
@@ -82,9 +87,46 @@ To prioritize and improve Fastbot-iOS, FastbotRunner collects usage data and upl
 ## License
 >  Copyright©2021 Bytedance
 >
->  Licensed under [MIT](./LICENSE) 
+>  Licensed under [Fastbot Revised](./LICENSE) 
 
 Fastbot-iOS required some features are based on or derives from projects below:
 * [WebDriverAgent](https://github.com/facebook/WebDriverAgent) licensed under BSD-3-Clause
 
 
+## Publications
+
+If you use our work in your research, please kindly cite us as:
+
+1. Lv, Zhengwei, Chao Peng, Zhao Zhang, Ting Su, Kai Liu, Ping Yang (2022). “Fastbot2: Reusable Automated Model-based GUI Testing for Android Enhanced by Reinforcement Learning”. In proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE 2022). ACM, To appear. [[pdf]](https://se-research.bytedance.com/pdf/ASE22.pdf)
+
+```bibtex
+@inproceedings{fastbot2,
+  title={Fastbot2: Reusable Automated Model-based GUI Testing for Android Enhanced by Reinforcement Learning},
+  author={Lv, Zhengwei and Peng, Chao and Zhang, Zhao and Su, Ting and Liu, Kai and Yang, Ping},
+  booktitle={Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE 2022)},
+  year={2022}
+}
+```
+
+2. Peng, Chao, Zhao Zhang, Zhengwei Lv, Ping Yang (2022). “MUBot: Learning to Test Large-Scale Commercial Android Apps like a Human”. In proceedings of the 38th International Conference on Software Maintenance and Evolution (ICSME 2022). IEEE, To appear. [[pdf]](https://se-research.bytedance.com/pdf/ICSME22B.pdf)
+
+```bibtex
+@inproceedings{mubot,
+  title={MUBot: Learning to Test Large-Scale Commercial Android Apps like a Human},
+  author={Peng, Chao and Zhang, Zhao and Lv, Zhengwei and Yang, Ping},
+  booktitle={Proceedings of the 38th International Conference on Software Maintenance and Evolution (ICSME 2022)},
+  year={2022}
+}
+```
+
+3. Cai, Tianqin, Zhao Zhang, and Ping Yang. “Fastbot: A Multi-Agent Model-Based Test Generation System”. In Proceedings of the IEEE/ACM 1st International Conference on Automation of Software Test. 2020. [[pdf]](https://se-research.bytedance.com/pdf/AST20.pdf)
+
+```bibtex
+@inproceedings{fastbot,
+  title={Fastbot: A Multi-Agent Model-Based Test Generation System},
+  author={Cai, Tianqin and Zhang, Zhao and Yang, Ping},
+  booktitle={Proceedings of the IEEE/ACM 1st International Conference on Automation of Software Test},
+  pages={93--96},
+  year={2020}
+}
+```
